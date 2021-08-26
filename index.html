@@ -92,9 +92,8 @@
             lg:text-left lg:-mt-4
           "
         >
-          Simple <span class="text-indigo-600">Job Management</span> the next
-          gen <span class="text-indigo-500">Proof of Work</span> solution for
-          everyone...
+          Simple <span class="text-indigo-600">Job Management</span>
+          <span id="title"></span>
         </h1>
         <p
           class="
@@ -112,11 +111,11 @@
             lg:text-left lg:px-0
           "
         >
-          Job Done, job management software keeps you in control by managing
-          your jobs and tasks in one simple interface. Setup client and project
-          information once, and let your resources on the ground document,
-          photograph and capture their progress, improving project management in
-          realtime.
+          Job Done, the job management software that keeps you in control by
+          managing your jobs and tasks in one simple interface. Setup client and
+          project information once, and let your resources on the ground
+          document, photograph and capture their progress, improving project
+          management in realtime.
         </p>
 
         <!--Mailchimp Begin-->
@@ -173,6 +172,20 @@
             Submit
           </button>
         </form>
+        <div class="mt-8">
+          <span
+            class="
+              bg-indigo-600
+              text-white
+              rounded-full
+              px-4
+              h-6
+              flex
+              items-center
+            "
+            >Signup for progress updates and early access when we release.</span
+          >
+        </div>
       </div>
       <div class="flex-1 hidden items-start flex-col justify-center lg:flex">
         <img src="./jdhero2x.png" class="h-100" alt="Job management solution" />
@@ -226,7 +239,7 @@
         </h2>
 
         <div class="flex flex-wrap mb-16">
-          <div class="w-1/6 sm:w-1/2 p-6 pl-24 pr-4">
+          <div class="w-1/6 sm:w-1/2 p-6 pl-24 pr-4 mt-8">
             <img src="./features1.png" class="h-50" alt="Intuitive" />
           </div>
           <div class="w-5/6 sm:w-1/2 p-6 pr-48">
@@ -244,7 +257,7 @@
         </div>
 
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div class="w-1/6 sm:w-1/2 p-6 pl-24 pr-4">
+          <div class="w-1/6 sm:w-1/2 p-6 pl-24 pr-4 mt-8">
             <img src="./features2.png" class="h-50" alt="Intuitive" />
           </div>
           <div class="w-5/6 sm:w-1/2 p-6 pr-48">
@@ -383,12 +396,22 @@
       </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       document
         .getElementById("signup_btn")
         .addEventListener("click", function () {
           document.getElementById("email").focus();
         });
+
+      var typed = new Typed("#title", {
+        strings: [
+          " ...the next generation Proof of Work solution for everyone...",
+          "for your entire team",
+          "...do, capture and submit. It's that easy!",
+        ],
+        typeSpeed: 80,
+      });
     </script>
   </body>
 </html>
